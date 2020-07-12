@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Цветочки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="mobile-hide">
+      <a class="location" href="https://goo.gl/maps/fAio9mEYJJb9GfAAA" target="_blank">Некрасова, 17</a>
+    </div>
+    <div class="title">
+      <span>коктейль-бар</span>
+      <h1>цветочки</h1>
+    </div>
+    <div class="lang">
+      <a class="lang_item active">ru</a>
+      <a class="lang_item">en</a>
+    </div>
+    <span class="mobile-menu">
+      <svg width="24" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1h22M1 6.5h22M1 12h22" stroke="#000" stroke-miterlimit="10" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </span>
+  </header>
+  <nav class="navigation mobile-hide">
+    <a class="navigation_item active">главная</a>
+    <a class="navigation_item">бар</a>
+    <a class="navigation_item">кухня</a>
+    <a class="navigation_item">события</a>
+    <a class="navigation_item">контакты</a>
+  </nav>
+  <main>
+    <section class="main">
+      <div class="main_left">
+        <picture>
+          <source media="(max-width: 720px)" srcset="./images/main_1_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/main_1.jpg">
+          <img src="./images/main_1.jpg" alt="image">
+        </picture>
+      </div>
+      <div class="main_right">
+        <div class="about ">
+          <p>Философия Цветочков
+            проста и привлекательна —
+            мы отличный бар,
+            концентрирующий в себе
+            все хорошее Петербургское.</p>
+          <a>Подробнее о нас
+            <svg class="mobile-hide" width="8" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M.286 12.926a.457.457 0 00.55-.041l6.934-5.85c.071-.06.13-.14.17-.233a.767.767 0 000-.603.627.627 0 00-.17-.233L.837.116A.454.454 0 00.285.074a.594.594 0 00-.209.24A.759.759 0 000 .652v11.7a.76.76 0 00.077.336c.05.102.123.184.209.24zm.78-11.034L6.53 6.5 1.067 11.11V1.892z"
+                fill="#000" />
+            </svg>
+          </a>
+        </div>
+        <picture class="mobile-hide">
+          <source media="(max-width: 320px)" srcset="./images/main_2_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/main_2.jpg">
+          <img src="./images/main_2.jpg" alt="image">
+        </picture>
+      </div>
+    </section>
+    <section class="interior padded">
+      <h2>интерьер</h2>
+      <div class="images">
+        <picture>
+          <source media="(max-width: 720px)" srcset="./images/interior_1_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/interior_1.jpg">
+          <img src="./images/interior_1.jpg" alt="image">
+        </picture>
+        <picture>
+          <source media="(max-width: 720px)" srcset="./images/interior_2_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/interior_2.jpg">
+          <img src="./images/interior_2.jpg" alt="image">
+        </picture>
+        <picture class="mobile-hide">
+          <source media="(max-width: 720px)" srcset="./images/interior_3_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/interior_3.jpg">
+          <img src="./images/interior_3.jpg" alt="image">
+        </picture>
+        <picture class="mobile-hide">
+          <source media="(max-width: 720px)" srcset="./images/interior_4_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/interior_4.jpg">
+          <img src="./images/interior_4.jpg" alt="image">
+        </picture>
+      </div>
+    </section>
+    <section class="menu padded">
+      <h2>меню</h2>
+      <div class="items">
+        <a class="menu_item">
+          <picture>
+            <source media="(max-width: 720px)" srcset="./images/menu_1_mobile.jpg">
+            <source media="(max-width: 1920px)" srcset="./images/menu_1.jpg">
+            <img src="./images/menu_1.jpg" alt="image">
+          </picture>
+          <span class="menu_text">бар</span>
+        </a>
+        <a class="menu_item">
+          <picture>
+            <source media="(max-width: 720px)" srcset="./images/menu_2_mobile.jpg">
+            <source media="(max-width: 1920px)" srcset="./images/menu_2.jpg">
+            <img src="./images/menu_2.jpg" alt="image">
+          </picture>
+          <span class="menu_text">кухня</span>
+        </a>
+      </div>
+    </section>
+    <section class="delivery padded">
+      <h2>доставка</h2>
+      <div class="info">
+        <p>Минимальная сумма заказа от 700 руб. ПО ВСЕМУ ГОРОДУ.<br />
+          Все вопросы можно задать по телефону +7(812)942−07−54<br />
+          Доставка осуществляется с 12:00 до 21:00.</p>
+        <p>Заказ также можно забрать самостоятельно по адресу:<br />
+          Улица некрасова, дом 17.<br />
+          Доставка заказа займёт около 1 часа, в зависимости от удалённости места доставки.</p>
+        <p>Оплатить заказ можно при получении, картой или наличными.</p>
+      </div>
+      <button>
+        Меню доставки
+      </button>
+    </section>
+    <section class="booking padded mobile-hide">
+      <h2>Бронь стола</h2>
+      <form class="booking_form">
+        <input placeholder="Дата">
+        <input placeholder="Время">
+        <input placeholder="Сколько человек">
+        <button>забронировать</button>
+      </form>
+    </section>
+    <section class="contacts">
+      <h2>Мы в соцсетях</h2>
+      <div class="social_links">
+        <a>Instagram</a>
+        <a>Facebook</a>
+        <a>ВКонтакте</a>
+      </div>
+      <div class="social_images">
+        <picture>
+          <source media="(max-width: 720px)" srcset="./images/social_1_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/social_1.jpg">
+          <img src="./images/social_1.jpg" alt="image">
+        </picture>
+        <picture>
+          <source media="(max-width: 720px)" srcset="./images/social_2_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/social_2.jpg">
+          <img src="./images/social_2.jpg" alt="image">
+        </picture>
+        <picture class="mobile-hide">
+          <source media="(max-width: 720px)" srcset="./images/social_3_mobile.jpg">
+          <source media="(max-width: 1920px)" srcset="./images/social_3.jpg">
+          <img src="./images/social_3.jpg" alt="image">
+        </picture>
+      </div>
+    </section>
+    <section class="subscribe padded">
+      <div class="subscribe_form">
+        <p>Подпишитесь на рассылку
+          и будьте всегда в курсе
+          новостей и событий бара!</p>
+        <form>
+          <input type="text" class="action small" placeholder="e-mail">
+          <button class="small">подписаться</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer_nav mobile-hide">
+      <a>о нас</a>
+      <a>меню</a>
+      <a>доставка</a>
+      <a>события</a>
+    </nav>
+    <div class="work_time">
+      <h4>Режим работы:</h4>
+      <p>пн – чт: 14:00 – 02:00</p>
+      <p>пт: 14:00 – 03:00</p>
+      <p class="weekend">сб: 14:00 – 03:00</p>
+      <p class="weekend">вс: 14:00 – 02:00</p>
+    </div>
+    <address class="address">
+      <h4>Адрес:</h4>
+      <a href="https://goo.gl/maps/fAio9mEYJJb9GfAAA" target="_blank">Санкт-Петербург, улица Некрасова, 17</a>
+      <h4>Метро:</h4>
+      <p>Чернышевская, площадь восстания</p>
+      <h4>Телефон:</h4>
+      <a href="tel:+78129420754">+7-(812)-942−07−54</a>
+    </address>
+  </footer>
+</body>
+
+</html>

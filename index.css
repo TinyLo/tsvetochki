@@ -1,0 +1,563 @@
+/* Reset CSS and base elements */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-style: normal;
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 7px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin: 87px 0 54px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+button {
+  box-sizing: border-box;
+  height: 69px;
+  line-height: 20px;
+  border: 2px solid #000;
+  padding: 0 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+input {
+  box-sizing: border-box;
+  height: 69px;
+  line-height: 20px;
+  border: 2px solid #000;
+  padding: 0 23px;
+  text-align: center;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+button.small {
+  height: 45px;
+  padding: 0 10px;
+}
+
+input.small {
+  height: 45px;
+  padding: 0 10px;
+}
+
+.padded {
+  padding: 0 98px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 80px;
+}
+
+.header .mobile-menu {
+  display: none;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-weight: 500;
+}
+
+.title span {
+  font-size: 12px;
+}
+
+.lang_item {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.lang_item:first-child {
+  margin-right: 5px;
+}
+
+.lang_item:hover,
+.lang_item.active {
+  border-bottom: 1px solid #000;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.navigation_item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.navigation_item:hover,
+.navigation_item.active {
+  border-bottom: 1px solid #000;
+}
+
+.navigation_item:not(:last-child) {
+  margin-right: 71px;
+}
+
+.navigation_item:not(:last-child):after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #000;
+  right: -35px;
+}
+
+/* Main */
+.main {
+  display: flex;
+}
+
+.main_left,
+.main_right {
+  width: 50%;
+}
+
+.main_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 120px;
+}
+
+.about a {
+  font-weight: 500;
+}
+
+.about a svg {
+  position: relative;
+  top: 1px;
+  margin-left: 10px;
+}
+
+/* Interior */
+.interior .images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.interior .images picture {
+  width: calc(50% - 10px);
+  height: 548px;
+}
+
+.interior .images picture:nth-child(2n + 1) {
+  margin-right: 20px;
+}
+
+.interior .images picture:first-child {
+  margin-bottom: 20px;
+}
+
+/* Menu */
+.menu .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu .menu_item {
+  width: calc(50% - 10px);
+  height: 548px;
+  position: relative;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.menu .menu_item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s ease;
+}
+
+.menu .menu_item:hover:after {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.menu .menu_item:first-child {
+  margin-right: 20px;
+}
+
+.menu .menu_item span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Delivery */
+.delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Booking */
+.booking_form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.booking_form button {
+  width: 272px;
+}
+
+.booking_form input {
+  flex: 1;
+  margin-right: 32px;
+}
+
+/* Social */
+.social_links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social_links a {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 300;
+  margin-bottom: 33px;
+}
+
+.social_images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social_images picture {
+  width: calc((100% - 40px) / 3);
+}
+
+.social_images picture:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Subscribe */
+
+.subscribe {
+  margin: 85px 0;
+}
+
+.subscribe .subscribe_form {
+  margin: auto;
+  width: 762px;
+  display: flex;
+}
+
+.subscribe_form p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 33px;
+  flex: 1;
+}
+
+.subscribe_form form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subscribe_form input,
+.subscribe_form button {
+  padding: 11px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 75px 98px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h4 {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_nav a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.work_time h4,
+.work_time p {
+  margin-bottom: 20px;
+}
+
+.work_time p.weekend {
+  margin: 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:visited {
+  color: #fff;
+}
+
+.address h4:not(:first-child) {
+  margin-top: 20px;
+}
+
+
+/* Mobile devices */
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  h1,
+  h2 {
+    font-size: 18px;
+  }
+  h2 {
+    margin: 48px 0 28px;
+  }
+
+  p {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 22px;
+  }
+
+  button,
+  input {
+    height: 42px;
+    padding: 0 10px;
+    font-size: 12px;
+    border-width: 1px;
+  }
+
+  .padded {
+    padding: 0 66px;
+  }
+
+  .header {
+    margin: 33px 20px 62px;
+  }
+
+  .title {
+    top: 54px;
+  }
+
+  .header .mobile-menu {
+    display: block;
+  }
+
+  .title span {
+    font-size: 10px;
+  }
+
+  .about {
+    margin-top: 23px;
+    padding: 0 60px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about a {
+    border: 1px solid #000;
+    height: 42px;
+    line-height: 38px;
+    padding: 0 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+    font-weight: 300;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .about a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+  .main_left,
+  .main_right {
+    width: 100%;
+  }
+
+  .interior .images picture {
+    width: 100%;
+    height: auto;
+    margin-right: 0 !important;
+  }
+
+  .menu .menu_item {
+    width: 100%;
+    height: auto;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .contacts {
+    padding: 0 66px;
+  }
+
+  .social_links a {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .social_images picture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 0 !important;
+  }
+
+  .subscribe {
+    margin: 28px 0;
+  }
+
+  .subscribe .subscribe_form {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .subscribe_form p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe_form input {
+    margin-bottom: 13px;
+  }
+
+  .footer {
+    padding: 26px 36px;
+  }
+  .footer h4 {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .footer p,
+  .footer a {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .work_time h4,
+  .work_time p {
+    margin-bottom: 10px;
+  }
+
+  .address h4:not(:first-child) {
+    margin-top: 10px;
+  }
+}
