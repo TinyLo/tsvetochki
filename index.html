@@ -11,18 +11,18 @@
 
 <body>
   <header class="header">
-    <div class="mobile-hide">
+    <div class="header_item mobile-hide">
       <a class="location" href="https://goo.gl/maps/fAio9mEYJJb9GfAAA" target="_blank">Некрасова, 17</a>
     </div>
-    <div class="title">
-      <span>коктейль-бар</span>
+    <div class="header_item title">
+      <span class="title_description">коктейль-бар</span>
       <h1>цветочки</h1>
     </div>
-    <div class="lang">
-      <a class="lang_item active">ru</a>
-      <a class="lang_item">en</a>
+    <div class="header_item lang">
+      <a class="lang_item active" href="#">ru</a>
+      <a class="lang_item" href="#">en</a>
     </div>
-    <span class="mobile-menu">
+    <span class="header_item mobile-menu">
       <svg width="24" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1h22M1 6.5h22M1 12h22" stroke="#000" stroke-miterlimit="10" stroke-linecap="round"
           stroke-linejoin="round" />
@@ -30,11 +30,11 @@
     </span>
   </header>
   <nav class="navigation mobile-hide">
-    <a class="navigation_item active">главная</a>
-    <a class="navigation_item">бар</a>
-    <a class="navigation_item">кухня</a>
-    <a class="navigation_item">события</a>
-    <a class="navigation_item">контакты</a>
+    <a class="navigation_item active" href="#">главная</a>
+    <a class="navigation_item" href="#">бар</a>
+    <a class="navigation_item" href="#">кухня</a>
+    <a class="navigation_item" href="#">события</a>
+    <a class="navigation_item" href="#">контакты</a>
   </nav>
   <main>
     <section class="main">
@@ -52,11 +52,10 @@
             мы отличный бар,
             концентрирующий в себе
             все хорошее Петербургское.</p>
-          <a>Подробнее о нас
-            <svg class="mobile-hide" width="8" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="about_link" href="#">Подробнее о нас
+            <svg class="mobile-hide" width="8" height="13" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M.286 12.926a.457.457 0 00.55-.041l6.934-5.85c.071-.06.13-.14.17-.233a.767.767 0 000-.603.627.627 0 00-.17-.233L.837.116A.454.454 0 00.285.074a.594.594 0 00-.209.24A.759.759 0 000 .652v11.7a.76.76 0 00.077.336c.05.102.123.184.209.24zm.78-11.034L6.53 6.5 1.067 11.11V1.892z"
-                fill="#000" />
+                d="M.286 12.926a.457.457 0 00.55-.041l6.934-5.85c.071-.06.13-.14.17-.233a.767.767 0 000-.603.627.627 0 00-.17-.233L.837.116A.454.454 0 00.285.074a.594.594 0 00-.209.24A.759.759 0 000 .652v11.7a.76.76 0 00.077.336c.05.102.123.184.209.24zm.78-11.034L6.53 6.5 1.067 11.11V1.892z" />
             </svg>
           </a>
         </div>
@@ -70,22 +69,22 @@
     <section class="interior padded">
       <h2>интерьер</h2>
       <div class="images">
-        <picture>
+        <picture class="interior_image">
           <source media="(max-width: 720px)" srcset="./images/interior_1_mobile.jpg">
           <source media="(max-width: 1920px)" srcset="./images/interior_1.jpg">
           <img src="./images/interior_1.jpg" alt="image">
         </picture>
-        <picture>
+        <picture class="interior_image">
           <source media="(max-width: 720px)" srcset="./images/interior_2_mobile.jpg">
           <source media="(max-width: 1920px)" srcset="./images/interior_2.jpg">
           <img src="./images/interior_2.jpg" alt="image">
         </picture>
-        <picture class="mobile-hide">
+        <picture class="interior_image mobile-hide">
           <source media="(max-width: 720px)" srcset="./images/interior_3_mobile.jpg">
           <source media="(max-width: 1920px)" srcset="./images/interior_3.jpg">
           <img src="./images/interior_3.jpg" alt="image">
         </picture>
-        <picture class="mobile-hide">
+        <picture class="interior_image mobile-hide">
           <source media="(max-width: 720px)" srcset="./images/interior_4_mobile.jpg">
           <source media="(max-width: 1920px)" srcset="./images/interior_4.jpg">
           <img src="./images/interior_4.jpg" alt="image">
@@ -95,7 +94,7 @@
     <section class="menu padded">
       <h2>меню</h2>
       <div class="items">
-        <a class="menu_item">
+        <a class="menu_item" href="#">
           <picture>
             <source media="(max-width: 720px)" srcset="./images/menu_1_mobile.jpg">
             <source media="(max-width: 1920px)" srcset="./images/menu_1.jpg">
@@ -103,7 +102,7 @@
           </picture>
           <span class="menu_text">бар</span>
         </a>
-        <a class="menu_item">
+        <a class="menu_item" href="#">
           <picture>
             <source media="(max-width: 720px)" srcset="./images/menu_2_mobile.jpg">
             <source media="(max-width: 1920px)" srcset="./images/menu_2.jpg">
@@ -124,38 +123,41 @@
           Доставка заказа займёт около 1 часа, в зависимости от удалённости места доставки.</p>
         <p>Оплатить заказ можно при получении, картой или наличными.</p>
       </div>
-      <button>
+      <button class="button">
         Меню доставки
       </button>
     </section>
     <section class="booking padded mobile-hide">
       <h2>Бронь стола</h2>
       <form class="booking_form">
-        <input placeholder="Дата">
-        <input placeholder="Время">
-        <input placeholder="Сколько человек">
-        <button>забронировать</button>
+        <label class="hidden">Дата</label>
+        <input class="input" type="time" placeholder="Дата">
+        <label class="hidden">Время</label>
+        <input class="input" type="date" placeholder="Время">
+        <label class="hidden">Сколько человек</label>
+        <input class="input" type="number" placeholder="Сколько человек">
+        <button class="button" type="submit">забронировать</button>
       </form>
     </section>
     <section class="contacts">
       <h2>Мы в соцсетях</h2>
       <div class="social_links">
-        <a>Instagram</a>
-        <a>Facebook</a>
-        <a>ВКонтакте</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">ВКонтакте</a>
       </div>
       <div class="social_images">
-        <picture>
+        <picture class="social_image">
           <source media="(max-width: 720px)" srcset="./images/social_1_mobile.jpg">
           <source media="(max-width: 1920px)" srcset="./images/social_1.jpg">
           <img src="./images/social_1.jpg" alt="image">
         </picture>
-        <picture>
+        <picture class="social_image">
           <source media="(max-width: 720px)" srcset="./images/social_2_mobile.jpg">
           <source media="(max-width: 1920px)" srcset="./images/social_2.jpg">
           <img src="./images/social_2.jpg" alt="image">
         </picture>
-        <picture class="mobile-hide">
+        <picture class="social_image mobile-hide">
           <source media="(max-width: 720px)" srcset="./images/social_3_mobile.jpg">
           <source media="(max-width: 1920px)" srcset="./images/social_3.jpg">
           <img src="./images/social_3.jpg" alt="image">
@@ -168,32 +170,33 @@
           и будьте всегда в курсе
           новостей и событий бара!</p>
         <form>
-          <input type="text" class="action small" placeholder="e-mail">
-          <button class="small">подписаться</button>
+          <label class="hidden">Email</label>
+          <input type="email" class="input small" placeholder="e-mail">
+          <button class="button small">подписаться</button>
         </form>
       </div>
     </section>
   </main>
   <footer class="footer">
     <nav class="footer_nav mobile-hide">
-      <a>о нас</a>
-      <a>меню</a>
-      <a>доставка</a>
-      <a>события</a>
+      <a href="#">о нас</a>
+      <a href="#">меню</a>
+      <a href="#">доставка</a>
+      <a href="#">события</a>
     </nav>
     <div class="work_time">
-      <h4>Режим работы:</h4>
+      <h4 class="footer_header">Режим работы:</h4>
       <p>пн – чт: 14:00 – 02:00</p>
       <p>пт: 14:00 – 03:00</p>
       <p class="weekend">сб: 14:00 – 03:00</p>
       <p class="weekend">вс: 14:00 – 02:00</p>
     </div>
     <address class="address">
-      <h4>Адрес:</h4>
+      <h4 class="footer_header">Адрес:</h4>
       <a href="https://goo.gl/maps/fAio9mEYJJb9GfAAA" target="_blank">Санкт-Петербург, улица Некрасова, 17</a>
-      <h4>Метро:</h4>
+      <h4 class="footer_header">Метро:</h4>
       <p>Чернышевская, площадь восстания</p>
-      <h4>Телефон:</h4>
+      <h4 class="footer_header">Телефон:</h4>
       <a href="tel:+78129420754">+7-(812)-942−07−54</a>
     </address>
   </footer>
